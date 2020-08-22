@@ -1,0 +1,57 @@
+<!DOCTTYPE html>
+<html>
+<!--
+<script>
+while(true)
+{
+  var pass=prompt("Enter Password:-");
+  if(pass=='sukarnajana')
+  {
+    break;
+  }
+  else
+  {
+    alert("Sorry! You have entered wrong Password.. So you cant access page. So, RETRY");
+  }
+}
+</script>
+-->
+<body style="background-color:black">
+<h1 align='center' style="color:white; font-family:Comic Sans MS">Hello<br>Control and see all the data</h1>
+<hr>
+<br>
+<h3 style="color:cyan; font-family:Kristen ITC">Data Send To Server:-</h3>
+<p style="color:white; font-family:Candara">Switch 1:-
+  <a href="/switch1/on"><button style="border-radius: 12px; background-color:springgreen">ON</button></a><a href="/switch1/off"><button style="border-radius: 12px; background-color:tomato">OFF</button></a></p>
+<p style="color:white; font-family:Candara">Switch 2:-
+  <a href="/switch2/on"><button style="border-radius: 12px; background-color:springgreen">ON</button></a><a href="/switch2/off"><button style="border-radius: 12px; background-color:tomato">OFF</button></a></p>
+<p style="color:green; font-family:Candara">Status:- {{S}} {{Se}}</p>
+<p style="color:white; font-family:Candara">Send Data to Display</p>
+<form action = "/display" method = "POST">
+  <input type = "text" name = "L1" value = "" maxlength = "16">
+  <br>
+  <input type = "text" name = "L2" value = "" maxlength = "16">
+  <br>
+  <input type="submit" value="Submit">
+</form>
+<h3 style="color:MediumSpringGreen; font-family:Kristen ITC">Server Send Data:-</h3>
+<p style="color:white; font-family:Candara">Room Temperature :- {{RT}}*C</p>
+<p style="color:white; font-family:Candara">Room Humidity:- {{RH}}%</p>
+<p style="color:white; font-family:Candara">Some One Is Near You:- {{IR}}</p>
+<hr>
+<p style="color:deepskyblue">This Page is running on:- Raspberri Pi 3B+<br>
+Design by:- Sukarna Jana</p>
+<p style="color:white; font-family:Candara">Server Temp. :- {{ST}}*C</p>
+<p style="color:white; font-family:Candara">IP address :- {{IP}}</p>
+<p style="color:crimson">Note:- <br>*The Webpage will run when the server is on<br>
+*If the device is not responding then Notify me<br>
+*For seeing the latest data refresh once and see</p>
+<a href="/notW"><button style="border-radius: 12px; background-color:gold">! NOT WORKING !</button></a>
+<a href="/off"><button style="border-radius: 12px; background-color:gold">Turn OFF the Server</button></a>
+<p style="color:green; font-family:Candara">{{i}}</p>
+<p style="color:white">You can contact me on:-<br>
+*Instagram:-<a href='https://www.instagram.com/sukarnajana/'>@sukarnajana<a><br>
+*facebook:-<a href='https://www.facebook.com/sukarna.jana.9/'>sukarna jana<a><br>
+</p>
+</body>
+</html>
